@@ -1,0 +1,137 @@
+
+
+.main-Hero-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 550;
+    padding-top: 50px;
+    background-image: url('../../../../assests/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main-Hero{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+}
+.hero-section1-container{
+    display: flex;
+}
+.hero-section1{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.banner-shape{
+    position: absolute;
+    top: 0;
+    left: 14%;
+    width: 1px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.102);
+    z-index: 2;
+}
+.banner-shape.shape2{
+    left: 30%;
+}
+.banner-shape.shape3{
+    left: 42%;
+}
+.banner-shape.shape4{
+    left: 56%;
+}
+.banner-shape.shape5{
+    left: 70%;
+}
+.banner-shape.shape6{
+    left: 85%;
+}
+.banner-shape:nth-of-type(odd)::before {
+    animation: 15s linear nama_utha infinite;
+}
+.banner-shape:nth-of-type(odd)::after {
+    animation: 18s linear utha_nama infinite;
+}
+.banner-shape::before {
+    background: #08d565;
+    position: absolute;
+    content: '';
+}
+.banner-shape:nth-of-type(even)::before {
+    animation: 13s linear utha_nama infinite;
+}
+.banner-shape:nth-of-type(even)::after {
+    animation: 15s linear nama_utha infinite;
+}
+.banner-shape::after, .banner-shape::before {
+    width: 1px;
+    height: 40px;
+    content: '';
+    position: absolute;
+}
+.banner-shape::after {
+    background: #ffffff;
+}
+.hero-text1{
+    margin: 0 ;
+    color: #08D565;
+}
+.hero-text{
+    margin: 0 ;
+    color: #ffffff;
+}
+.hero-signature{
+    width: 50%;
+}
+.career-btn{
+    width: 50%;
+    padding: 15px;
+    border: 1px solid #ffffff49;
+    border-radius: 4px;
+    background: none;
+    color: #ffffff; 
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    font-weight:550;
+    text-transform: uppercase;
+    cursor: pointer; 
+    z-index: 3;
+}
+.career-btn:hover{
+    border: 1px solid #08D565;
+    background-color: #08D565;
+    transition: opacity 0.3s ease, visibility 0.3s ease; 
+}
+.hero-image{
+    width: 50%;
+    object-fit: contain;
+    z-index: 3;
+}
+
+
+@keyframes utha_nama {
+    0% {
+        top: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        top: 100%;
+        transform: translateY(100%);
+    }
+}
+
+@keyframes nama_utha {
+    0% {
+        bottom: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        bottom: 100%;
+        transform: translateY(-100%);
+    }
+}

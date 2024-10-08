@@ -9,8 +9,8 @@ const App = () => {
   return (
     <>
     <Navbar />  
-    {/* <SharedRoutes />
-    <ScrollToTop />
+    <SharedRoutes />
+    {/* <ScrollToTop />
     <Footer /> */}
     </>
   )

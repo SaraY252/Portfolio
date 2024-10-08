@@ -14,7 +14,7 @@ const Home = () => {
     return (
       <div id='home'>
         <Hero />
-        <AboutMe />
+        {/* <AboutMe />
         <AwardWon />
         <ClientVoice />
         <Gallery />
@@ -23,7 +23,7 @@ const Home = () => {
         <MyAchivements />
         <MyHistory />
         <MySkills />
-        <Tweets />
+        <Tweets /> */}
       </div>
     );
   }

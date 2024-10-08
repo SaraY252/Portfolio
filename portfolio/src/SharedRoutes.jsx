@@ -12,10 +12,10 @@ const SharedRoutes = () => {
     <>
     <Routes>
       <Route path='/*' element={<Home />} />
-      <Route path='/blog/*' element={<Blog />} />
+      {/* <Route path='/blog/*' element={<Blog />} />
       <Route path='/blogsingle/*' element={<BlogSingle />} />
       <Route path='/award/*' element={<Award />} />
-      <Route path='/contact/*' element={<Contact />} />
+      <Route path='/contact/*' element={<Contact />} /> */}
     </Routes>
     </>
   )
